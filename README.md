@@ -1,2 +1,1 @@
 # RinexPy
-degree work
