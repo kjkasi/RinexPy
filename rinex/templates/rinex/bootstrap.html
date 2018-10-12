@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Starter Template for Bootstrap</title>
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static 'rinex/css/bootstrap.min.css' %}" />
+	</head>
+	<body>
+		
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		  <a class="navbar-brand" href="/">Rinex</a>
+		  <button class="navbar-toggler" type="button">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+			  
+			  <li class="nav-item active">
+				<a class="nav-link" href="/bootstrap/">Конкретное ПЭС</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link disabled" href="#">Суточное ПЭС</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link disabled" href="#">Вариации ПЭС</a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
+		
+		<main role="main" class="container">
+
+		  <div class="container">
+
+			<form>
+				<div class="form-row">
+			  <div class="form-group">
+				<label for="exampleFormControlSelect1">Название населенного пункта</label>
+				<select class="form-control" id="exampleFormControlSelect1">
+				  <option>Йошкар-Ола</option>
+				  <option>Казань</option>
+				  <option>Москва</option>
+				  <option>Воронеж</option>
+				  <option>Минск</option>
+				</select>
+			  </div>
+			  <div class="form-group">
+				<label for="exampleFormControlSelect1">Вид спутниковой системы</label>
+				<select class="form-control" id="exampleFormControlSelect1">
+				  <option>GPS</option>
+				  <option>GLONASS</option>
+				  <option>Transit</option>
+				  <option>Tsikada</option>
+				  <option>BeiDou</option>
+				  <option>Galileo</option>
+				  <option>DORIS</option>
+				  <option>IRNSS</option>
+				  <option>QZSS</option>
+				</select>
+			  </div>
+			  <div class="form-group">
+				<label for="exampleFormControlSelect1">Модель приемника</label>
+				<select class="form-control" id="exampleFormControlSelect1">
+				  <option>Javad</option>
+				  <option>Leyca</option>
+				  <option>Spectra</option>
+				  <option>Trible</option>
+				  <option>South</option>
+				</select>
+			  </div>
+			  <div class="form-group">
+				<label for="exampleFormControlSelect1">Диапозон частот</label>
+				<select class="form-control" id="exampleFormControlSelect1">
+				  <option>Javad</option>
+				  <option>Leyca</option>
+				  <option>Spectra</option>
+				  <option>Trible</option>
+				  <option>South</option>
+				</select>
+			  </div>
+			  <div class="form-row">
+				<div class="form-group col-md-3">
+				  <label for="inputEmail4">Диапозон частот</label>
+				  <input type="email" class="form-control" id="inputEmail4" placeholder="От">
+				</div>
+				<div class="form-group col-md-3">
+				  <label for="inputPassword4">&nbsp</label>
+				  <input type="password" class="form-control" id="inputPassword4" placeholder="До">
+				</div>
+			  </div>
+			</form>
+		  </div>
+
+		</main>
+		
+		{% load static %}
+		<script src="{% static 'rinex/js/bootstrap.bundle.js' %}"></script>
+		<script src="{% static 'rinex/js/jquery-3.3.1.min.js' %}"></script>
+	</body>
+</html>
