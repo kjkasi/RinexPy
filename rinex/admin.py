@@ -3,7 +3,11 @@ from __future__ import unicode_literals
 
 from django.contrib import admin
 
-from .models import Place, SatelliteSystem
+from .models import Station, SatelliteSystem
 
-admin.site.register(Place)
+admin.site.register(Station)
 admin.site.register(SatelliteSystem)
+
+'''
+manage.py changepassword admin
+'''

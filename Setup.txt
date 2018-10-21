@@ -1,0 +1,6 @@
+django-admin startproject rinexpy
+cd rinepy
+python manage.py runserver
+python manage.py startapp rinex
+python manage.py makemigrations
+python manage.py migrate
